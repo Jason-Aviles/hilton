@@ -1,0 +1,438 @@
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+p {
+  margin: 10px 0;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.678);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  padding: 10px 25px;
+  border-bottom: 1px solid white;
+  a {
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+		font-weight: bold;
+		cursor: pointer;
+  }
+  h1 {
+    font-weight: bold;
+  }
+}
+.middle-content {
+  margin-top: 20px;
+  line-height: 20px;
+	color: white;
+
+  a {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 10px 0;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.815);
+    text-decoration: underline;
+  }
+}
+.back {
+  background: url("../../img/background.png") fixed;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+}
+
+.main-middle-content {
+  margin: auto 5%;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  padding: 10px 25px;
+  flex-direction: column;
+  .box1 {
+    border: 3px solid white;
+  }
+}
+
+.tabs {
+  margin: auto 6%;
+  display: flex;
+  justify-content: start;
+	align-items: center;
+  padding: 0px 25px;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+footer {
+  border-top: 1px solid white;
+  margin-top: 20px;
+  div {
+    padding: 25px;
+    color: white;
+    margin: auto 6%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+    span {
+      line-height: 1.4em;
+      h3 {
+        font-weight: 400;
+      }
+    }
+
+    ul {
+      line-height: 1.4em;
+      cursor: pointer;
+    }
+  }
+}
+@media (min-width: 300px) {
+  header {
+    flex-direction: column-reverse;
+    line-height: 2em;
+
+    img {
+      width: 5em;
+      margin-top: 20px;
+    }
+    h1 {
+      color: white;
+      font-size: 1.1em;
+    }
+    a {
+      font-size: 0.8em;
+    }
+  }
+  .box1 {
+    width: 100%;
+    height: 130px;
+  }
+
+  .middle-h1 {
+    font-size: 1.1em;
+    font-weight: 800;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  ul {
+    margin-top: 20px;
+  }
+  .list {
+    width: 13.5em;
+    font-weight: 800;
+    font-size: 1.1em;
+    background: linear-gradient(
+      to bottom,
+      #f0f3f5 0%,
+      #d4e9ef 47%,
+      #d1e6f3 100%
+    );
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px#ffffff00;
+    padding: 10px 15px;
+  }
+
+  .border-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .border-bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  i {
+    -webkit-text-stroke: 1.5px white;
+	}
+	
+	footer {
+		border-top: 1px solid white;
+		margin-top: 20px;
+		div {
+			padding: 25px;
+			color: white;
+			margin: auto 6%;
+			display: flex;
+			justify-content: start;
+			align-items: start;
+			flex-direction: column;
+	
+			span {
+				line-height: 1.4em;
+				h3 {
+					font-weight: 400;
+				}
+			}
+	
+			ul {
+				line-height: 1.4em;
+				cursor: pointer;
+				li{	text-decoration: underline;
+					&:hover{	text-decoration: none;}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 400px) {
+  header {
+    flex-direction: row;
+    a {
+      color: rgb(255, 249, 249);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 {
+      font-weight: bold;
+    }
+    img {
+      width: 20%;
+      position: relative;
+      bottom: 17px;
+    }
+  }
+  .main-middle-content {
+    .box1 {
+      border: 3px solid white;
+      width: 21em;
+      height: 200px;
+    }
+  }
+  .list {
+    width: 18.5em;
+	}
+	footer {
+		border-top: 1px solid white;
+		margin-top: 20px;
+		div {
+			padding: 25px;
+			color: white;
+			margin: auto 6%;
+			display: flex;
+			justify-content: start;
+			align-items: start;
+			flex-direction: column;
+	
+			span {
+				line-height: 1.4em;
+				h3 {
+					font-weight: 400;
+				}
+			}
+	
+			ul {
+				line-height: 1.4em;
+				cursor: pointer;
+				li{	text-decoration: underline;
+					&:hover{	text-decoration: none;}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 600px) {
+  header {
+    font-size: 1.5em;
+    flex-direction: row;
+    a {
+      color: rgb(255, 249, 249);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 {
+      font-weight: bold;
+    }
+    img {
+      width: 8%;
+      position: relative;
+      bottom: 17px;
+    }
+  }
+  .main-middle-content {
+    font-size: 1.3em;
+    .box1 {
+      border: 3px solid white;
+      width: 100%;
+      height: 320px;
+    }
+  }
+  .list {
+    width: 26.5em;
+    font-size: 1.5em;
+  }
+
+  footer {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    div {
+      padding: 25px;
+      color: white;
+      margin: auto 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+
+      span {
+        line-height: 1.4em;
+        h3 {
+          font-weight: 400;
+        }
+      }
+
+      ul {
+        line-height: 1.4em;
+				cursor: pointer;
+			}
+				li{	text-decoration: underline;
+				&:hover{	text-decoration: none;}
+      }
+    }
+  }
+}
